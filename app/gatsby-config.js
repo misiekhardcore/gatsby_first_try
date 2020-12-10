@@ -5,6 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "some title",
+    description: "some description",
+    author: "michal",
+    data: ["item1", "item2"],
+    person: { name: "peter", age: 21 },
+  },
   /* Your site config here */
-  plugins: [],
+  plugins: [`gatsby-plugin-styled-components`],
 }

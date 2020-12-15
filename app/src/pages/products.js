@@ -30,14 +30,14 @@ const Products = ({ data }) => {
     <div className="products">
       {products.map(({ id, title, slug, price, image }) => (
         <div key={id} className="products__item">
-          <Link to={`products/${slug}`}>
+          <Link to={`${slug}`}>
             <Image fluid={image.fluid} alt={title} />
           </Link>
           <div className="products__item-info">
             <h4>{title}</h4>
             <span>$ {price}</span>
           </div>
-          <Link to={`products/${slug}`}>more details</Link>
+          <Link to={`${slug}`}>more details</Link>
         </div>
       ))}
     </div>

@@ -3,7 +3,6 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-
 module.exports = {
   siteMetadata: {
     title: "some title",
@@ -22,5 +21,21 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `c68daqphfgda`,
+        accessToken: `iP-oCpYMFzPtc1Tc1JpScxzxIIdqLCls0jfkdHWnmdE`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }

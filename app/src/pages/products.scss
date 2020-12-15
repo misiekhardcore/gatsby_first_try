@@ -5,9 +5,8 @@
   grid-gap: 1rem;
 
   .products__item {
-    .gatsby-image-wrapper {
-      height: 300px;
-      object-fit: cover;
+    div {
+      height: 15rem;
     }
 
     .products__item-info {
